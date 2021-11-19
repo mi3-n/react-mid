@@ -1,4 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@200&family=Montagu+Slab:wght@300&family=Zen+Antique+Soft&display=swap');
+* {
+  font-family: 'M PLUS 1', sans-serif;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  outline: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
 .App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 6rem;
+  letter-spacing: 0.1rem;
+  font-style: italic;
+  color: #483434;
+  text-transform: uppercase;
+  margin: 4rem 0;
+}
+
+
+.search-form {
+  width: 60rem;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  margin-bottom: 5rem;
+  position: relative;
+}
+
+.alert {
+  position: absolute;
+  top: -3rem;
+  left: 0;
+  background-color: #FFC286;
+  width: calc(100% - 0.4rem);
+  border-radius: 0.5rem;
+  padding: 0.2rem;
+}
+
+.alert h3 {
+  font-size: 1.8rem;
+  color: #fff;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.search-form input {
+  font-size: 1.6rem;
+  border: none;
+  border-bottom: 0.1rem solid #ccc;
+  margin: 0 0.5rem;
+  border-radius: 0.5rem;
+  height: 3rem;
+}
+
+.search-form input[type="text"] {
+  padding: 0 0.5rem;
+  width: 60%;
+  color: #555;
+}
+
+.search-form input[type="submit"] {
+  width: 25%;
+  text-transform: uppercase;
+  background-color: #6B4F4F;
+  color: #fff;
+}
+
+.recipes {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.recipe {
+  width: 30rem;
+  margin: 3rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #FFF3E4;
+  padding: 2rem;
+  position: relative;
+  border-radius: 0.5rem;
+  
+}
+
+.recipe h2 {
+  background-color: rgb(219, 208, 192, 0.7);
+  border-radius: 0.5rem;
+  padding: 0.3rem 0.5rem;
+  position: absolute;
+  top: 2.5rem;
+  left: 2.5rem;
+  right: 2.5rem;
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+.recipe img {
+  border-radius: 0.5rem;
+  object-fit: cover;
+}
+
+.recipe a {
+  font-size: 1.8rem;
+  text-decoration:underline;
+  text-decoration-color:　#6B4F4F;
+  color: #6B4F4F;
+}
+
+.recipe button {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #9E7777;
+  border: none;
+  border-radius: 0.5rem;
+  height: 3rem;
+}
+
+.ingredient-list {
+  margin-top: 1rem;
+  background-color: #f0f0f0;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+.ingredient-list li {
+  margin: 0.5rem 0;
+}
+
+.ingredient-text {
+  font-size: 1.5rem;
+  color: #888;
+}
+
+.ingredient-weight {
+  color: #FFADAD;
+  font-size: 1.3rem;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 4rem;
+  }
+  .search-form {
+    width: 50rem;
+    
+  }
+  .alert h3 {
+    font-size: 1.2rem;
+  }
+  .search-form input {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 537px){
+  h1 {
+    font-size: 2.5rem;
+  }
+  .search-form {
+    width: 30rem;
+    height: 6rem;
+  }
+  .alert h3 {
+    font-size: 0.9rem;
+  }
+  .search-form input {
+    font-size: 0.9rem;
+  }
+}
+
+
+
+
+
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +230,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
